@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | AeriSense</title>
+  <style>
+    :root {
+      --bg: #f7f8fa; --surface: #ffffff; --ink: #111827; --muted: #52606d;
+      --line: #d9e1e8; --steel: #6293af; --teal: #71acb0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    header { position: sticky; top: 0; z-index: 50; background: rgba(247, 248, 250, 0.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 68px; gap: 16px; flex-wrap: wrap; }
+    .brand { text-decoration: none; color: var(--ink); font-weight: 800; font-size: 1.2rem; display: inline-flex; align-items: center; gap: 8px; }
+    .brand i { width: 8px; height: 8px; border-radius: 2px; background: var(--steel); display: inline-block; }
+    nav ul { display: flex; list-style: none; gap: 22px; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: var(--muted); font-size: 0.9rem; font-weight: 600; padding: 6px 0; border-bottom: 2px solid transparent; }
+    nav a:hover, nav a.active { color: var(--ink); border-bottom-color: var(--steel); }
+    .nav-cta { text-decoration: none; font-size: 0.85rem; font-weight: 700; color: var(--ink); border: 1px solid var(--steel); padding: 7px 14px; border-radius: 6px; }
+    .nav-cta:hover { background: var(--steel); color: #fff; }
+    .page-top { padding: 52px 0 40px; border-bottom: 1px solid var(--line); }
+    .kicker { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--steel); margin-bottom: 10px; }
+    h1 { font-size: clamp(2rem, 3.5vw, 2.75rem); line-height: 1.15; letter-spacing: -0.025em; margin-bottom: 12px; }
+    .page-top p { color: var(--muted); max-width: 700px; font-size: 1rem; }
+    section.block { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    .mission { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--teal); border-radius: 10px; padding: 24px; margin-bottom: 36px; }
+    .mission h2 { font-size: 1.25rem; margin-bottom: 8px; }
+    .mission p { color: var(--muted); font-size: 0.95rem; }
+    .team-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .person { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
+    .role { font-size: 0.74rem; font-weight: 700; color: var(--steel); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .person h3 { font-size: 1.15rem; margin-bottom: 8px; }
+    .person p { color: var(--muted); font-size: 0.9rem; margin-bottom: 14px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tags span { font-size: 0.74rem; font-weight: 600; background: var(--bg); border: 1px solid var(--line); padding: 3px 8px; border-radius: 5px; }
+    footer { padding: 28px 0; background: var(--surface); }
+    .foot { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 0.86rem; color: var(--muted); }
+    @media (max-width: 900px) { .team-row { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .team-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a href="home.html" class="brand"><i></i>AeriSense</a>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="workflow.html">Workflow</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </div>
+  </header>
+
+  <section class="page-top">
+    <div class="wrap">
+      <div class="kicker">Mission &amp; Team</div>
+      <h1>A Breath of Relief</h1>
+      <p>
+        We build personalized longitudinal mealtime monitoring to help care teams and clinicians spot recurring swallowing changes between scheduled evaluations.
+      </p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="mission">
+        <h2>Why We Built AeriSense</h2>
+        <p>
+          In Hong Kong aged-care and rehabilitation settings, swallowing stability can vary across meals and days while formal checks happen infrequently. By comparing ordinary meals against each person's calibrated baseline and pairing caregiver context, AeriSense supports clearer, calmer care decisions.
+        </p>
+      </div>
+
+      <h2 style="font-size:1.45rem;margin-bottom:18px;">Leadership</h2>
+      <div class="team-row">
+        <article class="person">
+          <div>
+            <div class="role">CPO · Chief Product Officer</div>
+            <h3>Zoey</h3>
+            <p>Leads technical and product research, system design, and platform engineering—including building and maintaining the AeriSense website.</p>
+          </div>
+          <div class="tags"><span>Technical &amp; R&amp;D</span><span>Product</span><span>Web</span></div>
+        </article>
+
+        <article class="person">
+          <div>
+            <div class="role">CMO · Chief Marketing Officer</div>
+            <h3>Sophia</h3>
+            <p>Leads marketing, logo design, animation, and video editing—shaping visual identity, motion graphics, and promotional storytelling.</p>
+          </div>
+          <div class="tags"><span>Logo &amp; Brand</span><span>Animation</span><span>Editing</span></div>
+        </article>
+
+        <article class="person">
+          <div>
+            <div class="role">CEO · Chief Executive Officer</div>
+            <h3>Bianca</h3>
+            <p>Guides overall vision, project direction, and strategic alignment across team milestones.</p>
+          </div>
+          <div class="tags"><span>Vision</span><span>Strategy</span></div>
+        </article>
+
+        <article class="person">
+          <div>
+            <div class="role">COO · Chief Operating Officer</div>
+            <h3>Emma</h3>
+            <p>Leads business and economics strategy, operations, and pitching—while also pitching in to help with marketing.</p>
+          </div>
+          <div class="tags"><span>Business &amp; Econ</span><span>Pitching</span><span>Marketing</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <span><strong>AeriSense</strong> · A Breath of Relief</span>
+      <span>Zoey · Sophia · Bianca · Emma</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
